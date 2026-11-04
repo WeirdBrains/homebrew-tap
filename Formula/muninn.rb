@@ -4,28 +4,28 @@
 class Muninn < Formula
   desc "Local, encrypted store for OHLCV market bars"
   homepage "https://github.com/WeirdBrains/muninn"
-  version "2.20.0"
+  version "2.20.1"
   license "BSD-3-Clause"
 
   base = "https://github.com/WeirdBrains/muninn/releases/download/v#{version}"
   on_macos do
     on_arm do
       url "#{base}/muninn-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "af4d432df47a19c2a57a26e15c45c731d4fbede9ebcf23ef353788f8b689c49a"
+      sha256 "8ee9cfbd3dd47c8a69a6545f02f038fa55e96ea2f84e39bba65df2da382606ed"
     end
     on_intel do
       url "#{base}/muninn-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "c9c6b603978a948ef8188c5a1a0de64dfc07a7de0e866ca2db1d4dde0328b086"
+      sha256 "176433a12b322b060170c53ce2c91da58805543554df76422fdeb4813be7a570"
     end
   end
   on_linux do
     on_arm do
       url "#{base}/muninn-#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "35fd8ec247474a66871db545dd141aede1ead596b5d22975488a8ce02481e887"
+      sha256 "017e165d5d28dfaff5f9846dff39a39accc48f62cafff0b37fcc3def7829fbf8"
     end
     on_intel do
       url "#{base}/muninn-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d65c81f0a04f0c5e0eb703c776b27ac5a54ca838c127ed1a0daf652a6e65ef43"
+      sha256 "530cd213c6b31961a5c1717a8a4b463d8e60f5f6aa7a840546f1e7af0d5ca9a6"
     end
   end
 
