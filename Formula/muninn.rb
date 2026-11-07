@@ -2,30 +2,30 @@
 # Published in the tap github.com/WeirdBrains/homebrew-tap as Formula/muninn.rb:
 #   brew install weirdbrains/tap/muninn   (scripts/fill-sums.py fills in the sums)
 class Muninn < Formula
-  desc "Local, encrypted store for OHLCV market bars"
+  desc "Local, encrypted workbench for market data with peer-to-peer data workflows"
   homepage "https://github.com/WeirdBrains/muninn"
-  version "2.21.0"
+  version "2.22.0"
   license "BSD-3-Clause"
 
   base = "https://github.com/WeirdBrains/muninn/releases/download/v#{version}"
   on_macos do
     on_arm do
       url "#{base}/muninn-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "da6f2abb1056402afa14e4b96f877d16c4c0cd71d784ab36582a48ef6230e997"
+      sha256 "ca6d74bcfad16a788819cc9312debbb013c6c610fa26923e4ef2302ced711835"
     end
     on_intel do
       url "#{base}/muninn-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "0256a7fb5978e2a5c2ae4684ee483822666d6c4f5e9da8ec6c3b6383f19449b5"
+      sha256 "738123c2d7c1ed5f054297b1ff694c27c8a1742edd0d5d9952c90dde57cb49d3"
     end
   end
   on_linux do
     on_arm do
       url "#{base}/muninn-#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9900bcca8eb4f8df563e412c055ded523cdbc58d2ac829d3e34c3ac11646cc6f"
+      sha256 "7d7f8c188d8c5634aa5e7f507205203e22072809aa110f4a37f08529ac7ecc32"
     end
     on_intel do
       url "#{base}/muninn-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "a578c3f01e4178079d92b4b63fe73dbf8517d56b98abed18ab679c55074b5888"
+      sha256 "7a9b5632f5583e5f6a4660c00d9732560b8bc9d27a47166d9b38b459ae7d7d21"
     end
   end
 

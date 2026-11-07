@@ -2,12 +2,12 @@
 # github.com/WeirdBrains/homebrew-tap as Casks/muninn.rb:
 #   brew install --cask weirdbrains/tap/muninn   (scripts/fill-sums.py fills in the sum)
 cask "muninn" do
-  version "2.21.0"
-  sha256 "c17a39a661553ed7831c2be17a27088913980e37efde715ae77d673f0f386f45"
+  version "2.22.0"
+  sha256 "6e435f9687d3719f2fcc19c4f973504ef6d13a1b64995912afee0794c795b168"
 
   url "https://github.com/WeirdBrains/muninn/releases/download/v#{version}/muninn-#{version}-macos.dmg"
   name "Muninn"
-  desc "Local, encrypted store for OHLCV market bars"
+  desc "Local, encrypted workbench for market data with peer-to-peer data workflows"
   homepage "https://muninn.weirdbrains.com"
 
   app "Muninn.app"
